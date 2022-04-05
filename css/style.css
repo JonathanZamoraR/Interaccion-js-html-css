@@ -55,8 +55,8 @@ h4{
     padding: 20px 0 0 20px;
     background: transparent;
     border: none;
-    min-width: 400px;
-    min-height: 200px;
+    min-width: 320px;
+    min-height: 100px;
     display: inline-block;
     overflow: hidden;
     background-color: #eee;
