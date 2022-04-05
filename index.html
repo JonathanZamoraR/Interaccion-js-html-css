@@ -1,0 +1,121 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GENERATOR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container d-flex flex-column mt-5">
+        <div class="title text-center">
+            <h4>Online Border Radius Generator</h4>
+        </div>
+
+        <div class="contenido f-flex flex-column mt-5">
+            <div class="cont1 d-flex flex-row justify-content-around">
+                <div class="cuadros cuadro1 d-flex flex-column align-items-center p-3 ">
+                    <input class="caja rounded" value="0" min="0" type="number">
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                    </div>
+                    <label><input type="checkbox" name="InsertarTodos"> All the same</label>
+                </div>
+                <div class="cuadros cuadro2 d-flex flex-column align-items-center p-3">
+                    <input class="caja rounded" value="0" min="0" type="number">
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont2 d-flex flex-column align-items-center">
+                <div id="borderPeview" style="border: 5px solid rgb(28, 110, 164); outline: none;">
+                    <textarea cols="20" name="comments" rows="3" id="generatedRadiusCode" spellcheck="false" style="height: 168px; width: 290px;"></textarea>                </div>            
+            </div>
+
+            <div class="cont3 d-flex flex-row justify-content-around">
+                <div class="cuadros cuadro3 d-flex flex-column align-items-center p-3 ">
+                    <input class="caja rounded" value="0" min="0" type="number">
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                    </div>
+                </div>
+                <div class="cuadros cuadro4 d-flex flex-column align-items-center p-3">
+                    <input class="caja rounded" value="0" min="0" type="number">
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido2 mb-5 mt-3">           
+            <div class="rectangulos d-flex align-items-center">
+                <div class="alineacion-letra">
+                    Width:
+                    <button class="numero">1</button>
+                </div>
+                <div class="alineacion-comp">
+                    <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+            </div>
+
+            <div class="rectangulos d-flex align-items-center">
+                <div class="alineacion-letra">
+                    Style:
+                </div>
+                <div class="alineacion-comp stylo-b">
+                        <button style="border-style: solid;" title="solid" class="selected">solid</button>
+                        <button style="border-style: dotted;" title="dotted">dotted</button>
+                        <button style="border-style: dashed;" title="dashed">dashed</button>
+                        <button style="border-style: double;" title="double">double</button>
+                        <button style="border-style: groove;" title="groove">groove</button>
+                        <button style="border-style: ridge;" title="ridge">ridge</button>
+                        <button style="border-style: inset;" title="inset">inset</button>
+                        <button style="border-style: outset;" title="outset">outset</button>
+                        <button style="border-style: hidden;" title="hidden">hidden</button>
+                        <button style="border-style: none;" title="none">none</button>
+                </div>
+            </div>
+
+            <div class="rectangulos d-flex align-items-center">
+                <div class="alineacion-letra">
+                    Color:
+                </div>
+                <div class="alineacion-comp">
+                    <div>                    
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+                    </div>
+                </div>
+                <div class="alineacion-comp">
+                    <input type="range" id="vol" name="vol" min="0" max="100">
+                </div>
+                <button class="numero">1</button>
+            </div>
+
+            <div class="rectangulos d-flex align-items-center">
+                <div class="alineacion-letra">
+                    Position:
+                </div>
+                <div class="alineacion-comp">
+                    <div>
+                        <a class="selected" title="border" style="border: 4px solid #1C6EA4;">All</a>
+                        <a title="border-top" style="border-top: 4px solid #1C6EA4;">Top</a>
+                        <a title="border-right" style="border-right: 4px solid #1C6EA4;">Right</a>
+                        <a title="border-bottom" style="border-bottom: 4px solid #1C6EA4;">Bottom</a>
+                        <a title="border-left" style="border-left: 4px solid #1C6EA4;">Left</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
